@@ -10,6 +10,6 @@ In the game files, under the BepInEx/config folder, there'll be a BlackListedPla
 
 This file contains the user's id as well as their name at the time of banning
 
-To view a user's current name based on id, go to this URL (Filling in the actual user id): https://steamcommunity.com/profiles/<userid>
+To view a user's current name based on id, append the user id to this URL: https://steamcommunity.com/profiles/
 
 Any manual changes to the blacklist file require a game restart for them to take effect
