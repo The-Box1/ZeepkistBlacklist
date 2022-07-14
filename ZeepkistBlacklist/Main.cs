@@ -44,9 +44,6 @@ public partial class Main : BaseUnityPlugin
 
     public void Awake()
     {
-        Logger = base.Logger;
-
-
         if (!File.Exists(FilePath))
         {
             File.Create(FilePath);
@@ -60,6 +57,7 @@ public partial class Main : BaseUnityPlugin
                     BannedPlayers.Add(ulong.Parse(Regex.Split(banned, @" - ")[0]));
         }
 
+        Logger = base.Logger;
         Harmony.PatchAll();
         Logger.LogMessage("Loaded ZeepkistBlacklist");
     }
